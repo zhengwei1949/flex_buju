@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+    <script src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <h1>网页标题</h1>
+    </header>
+    <footer>
+        <a href="javascript:;" class="active">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-bars"></i>
+            <p>分类</p>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购物车</p>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-user"></i>
+            <p>会员中心</p>
+        </a>
+    </footer>
+    <main id="wrapper">
+        <div>
+            <!-- 轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner6.png" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- /轮播图 -->
+            <!-- 导航 -->
+            <div class="menu">
+                <a href="javascript:;"><img src="./images/nav1.png" alt=""></a>
+                <a href="javascript:;"><img src="./images/nav2.png" alt=""></a>
+                <a href="javascript:;"><img src="./images/nav3.png" alt=""></a>
+                <a href="javascript:;"><img src="./images/nav4.png" alt=""></a>
+                <a href="javascript:;"><img src="./images/nav5.png" alt=""></a>
+                <a href="javascript:;"><img src="./images/nav6.png" alt=""></a>
+            </div>
+            <!-- /导航 -->
+            <div style="height:100px;background:pink;"></div>
+        </div>
+    </main>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });  
+
+        var myScroll = new IScroll('#wrapper',{
+            scrollbars: true
+        });      
+    </script>
+</body>
+</html>
